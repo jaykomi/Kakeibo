@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/home_icon"/>
+    <item
+        android:id="@+id/expense"
+        android:title="@string/purchase"
+        android:icon="@drawable/expense_icon"/>
+    <item
+        android:id="@+id/report"
+        android:title="@string/reportcard"
+        android:icon="@drawable/report_icon"/>
+
+    <!-- Inivisible item voor selectie  -->
+
+    <item
+        android:id="@+id/invisibleWallet"
+        android:visible="false"/>
+</menu>

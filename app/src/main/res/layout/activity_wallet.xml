@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WalletActivity">
+
+
+    <EditText
+        android:id="@+id/editTextWalletName"
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:background="@drawable/logintext_background"
+        android:drawableStart="@drawable/ic_create"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="@string/wallet_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="6dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#455A64"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <EditText
+        android:id="@+id/editTextWalletIncome"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:background="@drawable/logintext_background"
+        android:drawableStart="@drawable/ic_dollar"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="@string/income"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:paddingStart="6dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#455A64"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <EditText
+        android:id="@+id/editTextWalletExpenses"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:background="@drawable/logintext_background"
+        android:drawableStart="@drawable/ic_dollar"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="@string/expenses"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:paddingStart="6dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#455A64"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <EditText
+        android:id="@+id/editTextWalletSavings"
+        android:layout_width="185dp"
+        android:layout_height="68dp"
+        android:background="@drawable/logintext_background"
+        android:drawableStart="@drawable/ic_dollar"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="@string/savings"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="6dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#455A64"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <EditText
+        android:id="@+id/editTextSavingFor"
+        android:layout_width="246dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/logintext_background"
+        android:drawableStart="@drawable/ic_help_black"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="@string/saving_for"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="4"
+        android:paddingStart="6dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#455A64"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <ImageButton
+        android:id="@+id/buttonCreateWallet"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:contentDescription="@string/add"
+        android:src="@drawable/ic_addplus"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonUpdateWallet"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:contentDescription="@string/update"
+        android:src="@drawable/ic_update"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="390dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationWallet"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationWallet"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.450">
+
+        <ListView
+            android:id="@+id/listviewWallets"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationWallet"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="675dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/bottomnavigation" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.614" />
+
+    <TextView
+
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

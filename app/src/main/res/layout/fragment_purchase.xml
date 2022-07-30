@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchaseFragment">
+
+    <TableRow android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/editTextTextPurchaseName"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:background="@drawable/logintext_background"
+            android:drawableStart="@drawable/ic_create"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="@string/purchase_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+        android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            android:textColorHint="#455A64" />
+
+        <ImageButton
+            android:id="@+id/purchaseHelpButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/help"
+            android:src="@drawable/ic_help_black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <TableRow android:paddingTop="15dp">
+
+    <EditText
+        android:id="@+id/editTextPurchaseDate"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:background="@drawable/logintext_background"
+        android:drawableStart="@drawable/ic_date"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="@string/purchase_date"
+        android:focusableInTouchMode="false"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:layout_marginStart="10dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#455A64"
+       />
+
+    </TableRow>
+
+    <TableRow android:paddingTop="15dp">
+
+
+    <EditText
+        android:id="@+id/editTextPurchasePrice"
+        android:layout_width="290dp"
+        android:layout_height="55dp"
+        android:background="@drawable/logintext_background"
+        android:drawableStart="@drawable/ic_dollar"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="@string/purchase_amount"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="10dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textStart"
+        android:textColorHint="#455A64"
+        />
+
+    </TableRow>
+
+    <TableRow android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/purchase_category"
+        android:textColor="@color/black"
+        />
+
+    </TableRow>
+
+    <TableRow android:paddingTop="10dp">
+
+    <Spinner
+        android:id="@+id/spinnerPurchaseCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@drawable/spinner_lining"
+        android:entries="@array/purchase_category"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="5dp"
+        tools:ignore="TextContrastCheck" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-70dp"
+            android:contentDescription="@string/drop"
+            android:src="@drawable/ic_drop"
+            tools:ignore="RedundantDescriptionCheck" />
+
+        <ImageButton
+        android:id="@+id/addPurchaseButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:layout_marginTop="-5dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/add"
+        android:src="@drawable/ic_addplus"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+</TableLayout>

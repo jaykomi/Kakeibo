@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    app:passwordToggleEnabled="true"
+    tools:context=".CreateAccount">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/wallet_id"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.028" />
+
+            <TextView
+                android:id="@+id/textViewWallet"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.079" />
+
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/goal_achieved"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.456"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.175" />
+
+            <Spinner
+                android:id="@+id/spinnerPurchaseCategory"
+                android:layout_width="217dp"
+                android:layout_height="53dp"
+                android:background="@drawable/spinner_lining"
+                android:entries="@array/goal_achieved"
+                android:gravity="center_vertical"
+                android:spinnerMode="dialog"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.237"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/drop"
+                android:src="@drawable/ic_drop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.768"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.245"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <TextView
+                android:layout_width="278dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/improvement_how"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.623" />
+
+            <EditText
+                android:id="@+id/editTextImprove"
+                android:layout_width="309dp"
+                android:layout_height="104dp"
+                android:layout_marginTop="228dp"
+                android:background="@drawable/logintext_background"
+                android:drawablePadding="10dp"
+                android:elevation="3dp"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="10"
+                android:paddingStart="6dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColorHint="#455A64"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="238dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/improvement"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.35" />
+
+            <EditText
+                android:id="@+id/editTextImproveHow"
+                android:layout_width="309dp"
+                android:layout_height="104dp"
+                android:layout_marginTop="384dp"
+                android:background="@drawable/logintext_background"
+                android:drawablePadding="10dp"
+                android:elevation="3dp"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLines="10"
+                android:paddingStart="6dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColorHint="#455A64"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/buttonSaveReport"
+                android:layout_width="188dp"
+                android:layout_height="65dp"
+                android:background="@drawable/loginbutton_background"
+                android:text="@string/save"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.953"
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
